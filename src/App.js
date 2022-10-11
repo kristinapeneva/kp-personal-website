@@ -9,7 +9,7 @@ import NotFoundPage from './pages/NotFoundPage';
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="wrapper">
         <NavBar />
         <div id="page-body">
           <Routes>
