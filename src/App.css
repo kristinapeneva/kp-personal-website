@@ -59,7 +59,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .text {
@@ -173,10 +173,6 @@ body {
   animation-delay: 150ms;
 }
 
-.logo {
-  width: 3rem;
-}
-
 @keyframes social {
   0% {
     opacity: 0;
@@ -205,5 +201,33 @@ body {
   100%{
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media (max-width:600px) {
+  :root{
+    font-size: max(calc(0.5em + 1vw), 14px);
+  }
+
+  .header {
+    height: 85vh;
+    padding: 2rem;
+    background-image: url('/public/profile_photo.jpg');
+    background-position: top left;
+    background-size: cover;
+  }
+
+  .text {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(96, 96, 96, 0.5);
+  }
+
+  .social {
+    height: 15vh;
   }
 }
